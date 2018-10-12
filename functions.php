@@ -17,6 +17,17 @@ register_nav_menus( array(
 	'primary' => __( 'MENU HEADER', 'menu-header' ),
 ) );
 
+
+/**************************************
+ * Delimita o tamanho do resumo (excerpt)
+ **************************************/
+
+function novo_tamanho_do_resumo($length) {
+  return 25;
+}
+add_filter('excerpt_length', 'novo_tamanho_do_resumo');
+
+
 /**************************************
  *  SCRIPTS / CSS
  **************************************/
