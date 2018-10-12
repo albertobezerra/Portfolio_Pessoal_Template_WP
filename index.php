@@ -71,7 +71,7 @@
 		<div class="row">
 
 			<?php 
-				$args = array('post_type'=>'post', 'showposts'=>4);
+				$args = array('post_type'=>'post', 'category_name'=>'portfolio', 'showposts'=>4);
 				$my_posts = get_posts( $args );
 				if($my_posts) : foreach($my_posts as $post) : setup_postdata( $post );
 			 ?>
