@@ -160,6 +160,7 @@ Tags: Portfolio, Pessoal, Blog, Posts, Design
 .partedotexto{
 	background: white;
 	height:261px;
+	border: 1px #F0616E solid;
 }
 
 .texto-portfolio-principal{
@@ -193,6 +194,16 @@ Tags: Portfolio, Pessoal, Blog, Posts, Design
 	font-family: ABold;
 }
 
+.btn-da-desc-principal:hover{
+	background: #F0616E;
+	border: 3px solid #F0616E;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: white;
+	font-family: ABold;
+}
+
+
 .link{
 	margin: 0 auto;
 	width: 129px;
@@ -202,10 +213,10 @@ Tags: Portfolio, Pessoal, Blog, Posts, Design
 
 .mais-projetos{
 	text-transform: uppercase;
-	background: none;
+	background: white;
 	border: 3px solid white;
 	margin-left: 20px;
-	color: white;
+	color: #F0616E;
 	font-family: ABold;
 	padding: 10px;
 
@@ -284,6 +295,14 @@ Tags: Portfolio, Pessoal, Blog, Posts, Design
 	font-family: ABold;
 }
 
+.btn-da-desc-principal-blog:hover{
+	background: white;
+	border: 3px solid white;
+	margin-left: 20px;
+	color: #F0616E;
+	font-family: ABold;
+}
+
 .link-blog{
 	margin: 0 auto;
 	width: 129px;
@@ -293,10 +312,10 @@ Tags: Portfolio, Pessoal, Blog, Posts, Design
 
 .mais-projetos-blog{
 	text-transform: uppercase;
-	background: none;
+	background: #F0616E;
 	border: 3px solid #F0616E;
 	margin-left: 20px;
-	color: #F0616E;
+	color: white;
 	font-family: ABold;
 	padding: 10px;
 
@@ -526,6 +545,37 @@ Tags: Portfolio, Pessoal, Blog, Posts, Design
 
 /* POSTS */
 
+/* PAGINACAO */
+
+.page-numbers {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 2px 0 0;
+	border: 3px solid #F0616E;
+	line-height: 1;
+	text-decoration: none;
+	font-weight: 600;
+	color: #F0616E;
+	text-transform: uppercase;
+}
+.page-numbers.current,
+a.page-numbers:hover {
+	background: #F0616E;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a.page-numbers:active {
+	background: #F0616E!important;
+	color:#fff!important;
+	text-decoration: none!important;
+	text-transform: uppercase!important;
+}
+
+.container.container-custom {
+    padding-left: 0;
+}
 
 @media (max-width: 415px){
 

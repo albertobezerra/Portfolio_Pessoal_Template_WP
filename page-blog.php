@@ -8,12 +8,15 @@
 		
 		<div class="row">
 
-			<?php 
-				$args = array('post_type'=>'post', 'category_name'=>'blog', 'showposts'=>3);
-				$my_posts = get_posts( $args );
-				if($my_posts) : foreach($my_posts as $post) : setup_postdata( $post );
-			 ?>
+			<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?> 
+			<?php query_posts("category_name=doblog&showposts=3&paged=$paged"); ?> 
 
+			
+
+
+			<?php while(have_posts()) : the_post(); ?>
+
+				
 			 <div class="col-md-8 partedaimagem-blog">
 			 	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(false, array('class'=>'thumb-principal')); ?></a>
 			 </div>
@@ -25,13 +28,13 @@
 			 </div>
 
 
-			 <?php
-		    	endforeach;
-		    	endif;
-	     	?>
+			<?php endwhile; ?>
+
 
 		</div>
 
+		<div class="container container-custom"><?php echo paginate_links(); ?></div>
+		
 	</div>
 
 </div>

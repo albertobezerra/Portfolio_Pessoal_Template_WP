@@ -3,16 +3,16 @@
 <div class="page-portfolio">
 	
 	<div class="container">
+
 		<h2 class="titulo-portfolio-page">Portfólio</h2>
 		
 		<div class="row">
 
-			<?php 
-				$args = array('post_type'=>'post', 'category_name'=>'porfolio', 'showposts'=>4);
-				$my_posts = get_posts( $args );
-				if($my_posts) : foreach($my_posts as $post) : setup_postdata( $post );
-			 ?>
+			<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?> 
+			<?php query_posts("category_name=portfa&showposts=3&paged=$paged"); ?> 
 
+			<?php while(have_posts()) : the_post(); ?>
+				
 			 <div class="col-md-8 partedaimagem">
 			 	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(false, array('class'=>"thumb-principal")); ?></a>
 			 </div>
@@ -24,14 +24,16 @@
 			 </div>
 
 
-			 <?php
-		    	endforeach;
-		    	endif;
-	     	?>
+			 <?php endwhile; ?>
+
 
 		</div>
 
+			
+
 	</div>
+
+	<div class="container container-custom"><?php echo paginate_links(); ?></div>
 
 </div>
 

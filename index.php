@@ -71,7 +71,7 @@
 		<div class="row">
 
 			<?php 
-				$args = array('post_type'=>'post', 'category_name'=>'portfolio', 'showposts'=>4);
+				$args = array('post_type'=>'post', 'category_name'=>'portfa', 'showposts'=>4);
 				$my_posts = get_posts( $args );
 				if($my_posts) : foreach($my_posts as $post) : setup_postdata( $post );
 			 ?>
@@ -92,7 +92,7 @@
 		    	endif;
 	     	?>
 			<div class="clear"></div>
-			<div class="link"><a class="mais-projetos" href="">+ projetos</a></div>
+			<div class="link"><a class="mais-projetos" href="portfolio">+ projetos</a></div>
 
 		</div>
 
@@ -114,7 +114,7 @@
 		<div class="row">
 
 			<?php 
-				$args = array('post_type'=>'post', 'category_name'=>'blog', 'showposts'=>3);
+				$args = array('post_type'=>'post', 'category_name'=>'doblog', 'showposts'=>3);
 				$my_posts = get_posts( $args );
 				if($my_posts) : foreach($my_posts as $post) : setup_postdata( $post );
 			 ?>
@@ -135,7 +135,7 @@
 		    	endif;
 	     	?>
 			<div class="clear"></div>
-			<div class="link-blog"><a class="mais-projetos-blog" href="">+ posts</a></div>
+			<div class="link-blog"><a class="mais-projetos-blog" href="blog">+ posts</a></div>
 
 		</div>
 
