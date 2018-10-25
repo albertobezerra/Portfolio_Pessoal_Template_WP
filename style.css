@@ -577,6 +577,20 @@ a.page-numbers:active {
     padding-left: 0;
 }
 
+.espacolateral{
+	margin-top: 100px;
+	background: black;
+}
+
+
+
+
+
+
+
+
+/**************** ADECACAO DAS TELAS *****************/
+
 @media (max-width: 415px){
 
 .navbar-brand-custom{

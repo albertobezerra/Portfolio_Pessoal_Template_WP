@@ -9,15 +9,17 @@
 				
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
-				<div class="titulo-do-post"><h3><?php the_title(); ?></h3></div>	
+				<div class="col-12 col-md-8">
 
-				<?php the_content(); ?>
+					<div class="titulo-do-post"><h3><?php the_title(); ?></h3></div>	
 
-				<?php endwhile; endif; ?>
+						<?php the_content(); ?>
 
-				<?php echo paginate_links(); ?>
+						<?php endwhile; endif; ?>
 
-			
+				</div>
+
+				<div class="col-6 col-md-4 espacolateral">Oremos</div>			
 		
 				
 	
