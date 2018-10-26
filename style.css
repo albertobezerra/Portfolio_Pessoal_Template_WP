@@ -600,8 +600,13 @@ a.page-numbers:active {
 .publicidade{
 	margin-top: 100px;
 	margin-bottom: 30px;
+	width: 100%;
 }
 
+.publicidade>img{
+	width: 100%;
+
+}
 
 
 

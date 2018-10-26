@@ -25,9 +25,21 @@
 
 					<div class="autor">Informações do Autor</div>
 
-					<div class="maisvistos">Mais vistos</div>
+					<div class="maisvistos">Mais vistos
 
-					<div class="ultimaspublicacoes">Últimas publicações</div>
+						<?php if (function_exists('get_most_viewed')): ?>
+            			<?php get_most_viewed('post',5); ?> 
+          				<?php endif; ?>
+
+					</div>
+
+					<div class="ultimaspublicacoes">Últimas publicações
+
+
+
+					
+
+					</div>
 
 					<div class="publicidade">Publicidade
 						
@@ -40,6 +52,21 @@
 							     data-ad-slot="5425200500"></ins>
 							<script>
 							     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+
+						<img src="<?php bloginfo('template_directory'); ?>/assets/images/01.jpg">
+
+
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<!-- Publii Lateral -->
+							<ins class="adsbygoogle"
+							     style="display:block"
+							     data-ad-client="ca-pub-7979689703488774"
+							     data-ad-slot="5146068713"
+							     data-ad-format="auto"
+							     data-full-width-responsive="true"></ins>
+							<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
 						</script>
 
 					</div>
