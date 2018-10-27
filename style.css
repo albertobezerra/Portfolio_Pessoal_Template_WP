@@ -582,15 +582,6 @@ a.page-numbers:active {
 	margin-top: 100px;
 }
 
-.autor{
-	margin-top: 100px;
-}
-
-.maisvistos{
-	margin-top: 30px;
-	border-top: 1px solid #F0616E;
-	margin-bottom: 30px;
-}
 
 .ultimaspublicacoes{
 	margin-top: 100px;
@@ -608,9 +599,66 @@ a.page-numbers:active {
 
 }
 
+/* AREA DOS MAIS VISTOS */
+
+.maisvistos{
+	margin-top: 30px;
+	border-top: 1px solid #F0616E;
+	margin-bottom: 30px;
+}
+
+.clearfix:after {
+    content: '.';
+    width: 100%;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.mais-visto-chamada {
+	text-transform: uppercase;
+	margin-top: 10px;
+   
+}
+.mais-visto-thumbnail {
+    float: left;
+    margin-top: 0px;
+}
+.mais-visto img.attachment-mais-visto-thumbnail {
+    max-width: 100%;  /* Escolha a largura que preferir */
+    height: auto;
+    margin: 0 10px 0 0;
+    float: left; /* Remove margens extra */
+    border-radius: 5px; 
+}
+.mais-visto .mais-visto-titulo > a {
+	color: #F0616E;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.mais-visto .mais-visto-titulo > a:hover {
+    color: #C84D58;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.spcdotexto{
+	margin-bottom: 10px;
+}
+
 
 
 /* AREA DO AUTOR */
+
+.autor{
+	margin-top: 100px;
+}
 
 .clearfix:after {
     content: '.';
