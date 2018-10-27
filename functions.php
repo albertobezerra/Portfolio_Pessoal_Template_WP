@@ -84,4 +84,88 @@ function wordpress_pagination() {
 
 ?>
 
+<?php
+
+
+
+
+/*-----------------------------------------------------------------------------*
+  Área do autor
+*-----------------------------------------------------------------------------*/
+
+if ( ! function_exists('tutsup_author_area') ) {
+
+    function tutsup_author_area() {
+        
+        // Apenas apresentaremos a área do autor em posts na íntegra
+        if ( is_single() ):
+            $author_id = get_the_author_meta( 'ID' );
+?>
+            
+            <!-- Área do autor -->
+            <div class="tp-author-area clearfix">
+            
+                <!-- Conteúdo interno da área do autor -->
+                <div class="tp-inner-author-area">
+                    
+                    <!-- Gravatar -->
+                    <div class="tp-author-gravatar">
+                    
+                        <a class="tp-author-link" href="<?php echo esc_url( get_author_posts_url( $author_id ) ); ?>">
+                            <?php echo get_avatar( get_the_author_meta( 'user_email' ), 150 ); ?>
+                        </a>
+                    
+                    </div> <!-- tp-author-gravatar -->
+                    
+                    <!-- Texto sobre o autor -->
+                    <p class="tp-about-autor-text">
+                        <?php _e('Sobre o autor', 'tutsup'); ?>
+                    </p>
+                    
+                    <!-- Nome e link do autor -->
+                    <h3 class="tp-about-autor-heading">
+                        <a href="<?php echo get_author_posts_url( $author_id );?>">
+                            <?php echo get_the_author(); ?>
+                        </a>
+                    </h3>
+                    
+                    <!-- Descrição do autor -->
+                    <div class="tp-author-info">
+                    
+                        <?php the_author_meta( 'description' ); ?>
+                        
+                        <!-- Links sociais -->
+                        <p class="tp-social-links clearfix">  
+                        
+                        <?php if ( get_the_author_meta( 'facebook', $author_id ) ): ?>
+                            <a class="tp-author-social-link" href="<?php 
+                                echo get_the_author_meta( 'facebook', $author_id ); 
+                            ?>">Facebook</a>  
+                        <?php endif;?>
+                        
+                        <?php if ( get_the_author_meta( 'googleplus', $author_id ) ): ?>
+                            <a class="tp-author-social-link" href="<?php 
+                                echo get_the_author_meta( 'googleplus', $author_id ); 
+                            ?>?rel=author" rel="author">Google+</a> 
+                        <?php endif;?>
+                        
+                        <?php if ( get_the_author_meta( 'twitter', $author_id ) ): ?>
+                            <a class="tp-author-social-link" href="<?php 
+                                echo get_the_author_meta( 'twitter', $author_id  ); 
+                            ?>">Twitter</a>
+                        <?php endif;?>
+                    
+                        </p>
+                        
+                    </div> <!-- tp-author-info -->
+                    
+                </div> <!-- tp-inner-author-area -->
+            </div> <!-- tp-author-area -->
+        
+        <?php endif; // is_single() ?>
+<?php
+    } // tutsup_author_area
+} // function_exists
+?>
+
 

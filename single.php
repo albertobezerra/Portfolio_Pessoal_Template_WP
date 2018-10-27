@@ -23,7 +23,12 @@
 
 				<div class="col-6 col-md-4">
 
-					<div class="autor">Informações do Autor</div>
+					<div class="autor">
+
+						<?php tutsup_author_area();?>
+
+
+					</div>
 
 					<div class="maisvistos">Mais vistos
 

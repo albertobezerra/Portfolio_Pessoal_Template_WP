@@ -584,11 +584,9 @@ a.page-numbers:active {
 
 .autor{
 	margin-top: 100px;
-	margin-bottom: 30px;
 }
 
 .maisvistos{
-	margin-top: 100px;
 	margin-bottom: 30px;
 }
 
@@ -610,6 +608,70 @@ a.page-numbers:active {
 
 
 
+/* AREA DO AUTOR */
+
+.clearfix:after {
+    content: '.';
+    width: 100%;
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.tp-author-area{
+    padding: 15px 0;
+    margin: 0;
+}
+.tp-inner-author-area{
+    /* Para ajustar ao twentyfourteen - edite conforme seu tema*/
+    max-width: 478px;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.tp-author-area .tp-author-gravatar {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 100px;
+    height: 100px;
+}
+.tp-author-area .tp-author-gravatar img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+.tp-author-link{}
+.tp-author-area .tp-about-autor-text, .tp-author-area .tp-about-autor-heading{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.tp-author-area .tp-about-autor-text {
+    margin-bottom: 5px;
+}
+.tp-author-area .tp-about-autor-heading {
+    margin: 10px 0 20px 0;
+    clear: none;
+    font-size: 30px;
+}
+.tp-author-info{
+    clear: both;
+}
+.tp-author-area .tp-social-links{
+    margin: 10px 0;
+}
+.tp-author-area .tp-author-social-link{
+    color: #fff;
+    padding: 2px 5px;
+    background: #24890d;
+}
+.tp-author-area .tp-author-social-link:hover{
+    color: #fff;
+}
 
 
 
