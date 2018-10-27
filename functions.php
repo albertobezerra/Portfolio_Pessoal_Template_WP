@@ -124,9 +124,9 @@ if ( ! function_exists('tutsup_author_area') ) {
                     
                     <!-- Nome e link do autor -->
                     <h3 class="tp-about-autor-heading">
-                        <a href="<?php echo get_author_posts_url( $author_id );?>">
+                        
                             <?php echo get_the_author(); ?>
-                        </a>
+                        
                     </h3>
                     
                     <!-- Descrição do autor -->

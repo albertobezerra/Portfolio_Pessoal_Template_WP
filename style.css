@@ -587,6 +587,8 @@ a.page-numbers:active {
 }
 
 .maisvistos{
+	margin-top: 30px;
+	border-top: 1px solid #F0616E;
 	margin-bottom: 30px;
 }
 
@@ -621,16 +623,14 @@ a.page-numbers:active {
     overflow: hidden;
 }
 .tp-author-area{
-    padding: 15px 0;
-    margin: 0;
+
 }
 .tp-inner-author-area{
     /* Para ajustar ao twentyfourteen - edite conforme seu tema*/
-    max-width: 478px;
-    border-top: 1px solid #eee;
-    padding: 15px 0;
+    max-width: 100%;
+    border-top: 1px solid #F0616E;
     margin: 0 auto;
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .tp-author-area .tp-author-gravatar {
