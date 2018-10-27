@@ -19,6 +19,29 @@
 
 						<?php endwhile; endif; ?>
 
+						<div class="post-pag-wrap">
+
+							<div class="post-pag-container prev">
+								<?php previous_post_link('
+									<span>Post anterior</span>
+									<h3>%link</h3>
+									', '%title', false);
+								?>
+							</div>
+
+							<div class="post-pag-container next">
+								<?php next_post_link('
+									<span>Próximo post</span>
+									<h3>%link</h3>
+									', '%title', false);
+								?>
+							</div>
+
+						</div>
+
+					
+
+
 				</div>
 
 				<div class="col-6 col-md-4">
@@ -34,7 +57,7 @@
 
 						<p class="mais-visto-chamada">Post's Mais vistos</p>
 
-						<?php
+							<?php
 							$nova_consulta = new WP_Query( 
 							    array(
 							        'posts_per_page'      => 5,                 // Máximo de 5 artigos

@@ -545,6 +545,89 @@ Tags: Portfolio, Pessoal, Blog, Posts, Design
 
 /* POSTS */
 
+.post-pag-wrap {
+	padding: 14px 0px;
+	box-sizing: border-box;
+	border-top: 1px solid #F0616E;
+	border-bottom: 1px solid #F0616E;
+	width: 100%;
+	margin: 40px auto 50px;
+}
+
+.post-pag-container {
+	width: 49%;
+	padding: 0px 8px;
+	box-sizing: border-box;
+	display: inline-block;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	vertical-align: top;
+	min-height: 50px;
+}
+
+.post-pag-container h3 {
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	padding: 0px;
+	margin: auto;
+	margin-top: 7px;
+	margin-bottom: 0px;
+}
+
+.post-pag-container.prev {
+	text-align: left;
+	border-right: 1px solid #F0616E;
+	margin-right: -1px;
+}
+
+.post-pag-container.prev>span {
+	color: black;
+}
+
+.post-pag-container.next {
+	text-align: right;
+	margin-left: -2px;
+}
+
+.post-pag-container.next>span {
+	color: black;
+}
+
+.post-pag-container.prev h3 {
+	text-align: left;
+	margin-top: 15px;
+}
+
+.post-pag-container.prev h3>a {
+	color: #F0616E;
+	padding: 10px;
+}
+
+.post-pag-container.prev h3>a:hover {
+	color: #C84D58;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.post-pag-container.next h3 {
+	text-align: right;
+	margin-top: 15px;
+}
+
+.post-pag-container.next h3>a {
+	color: #F0616E;
+	padding: 10px;
+}
+
+.post-pag-container.next h3>a:hover {
+	color: #C84D58;
+	padding: 10px;
+	text-decoration: none;
+}
+
+
+
 /* PAGINACAO */
 
 .page-numbers {
@@ -646,10 +729,6 @@ a.page-numbers:active {
     color: #C84D58;
     font-size: 16px;
     text-decoration: none;
-}
-
-.spcdotexto{
-	margin-bottom: 10px;
 }
 
 
