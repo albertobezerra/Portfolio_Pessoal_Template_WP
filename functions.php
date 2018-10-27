@@ -44,6 +44,29 @@ function wp_responsivo_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wp_responsivo_scripts' );
 
+/*-----------------------------------------------------------------------------*
+  Novos campos de contato
+*-----------------------------------------------------------------------------*/
+
+if ( ! function_exists('tutsup_new_contact_fields') ) {
+
+    function tutsup_new_contact_fields( $contact_fields ) {
+        // Twitter
+        $contact_fields['twitter'] = 'Twitter';
+        
+        // Facebbok
+        $contact_fields['facebook'] = 'Facebook';
+        
+        // Google+
+        $contact_fields['googleplus'] = 'Google+';
+
+        return $contact_fields;
+    } // tutsup_new_contact_fields
+    
+    add_filter('user_contactmethods', 'tutsup_new_contact_fields', 10, 1);
+    
+} // function_exists
+
 
 /* PAGINAÇÃO WORDPRESS */
 function wordpress_pagination() {
@@ -60,3 +83,5 @@ function wordpress_pagination() {
       }
 
 ?>
+
+
