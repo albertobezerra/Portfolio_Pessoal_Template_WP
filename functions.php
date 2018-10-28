@@ -53,14 +53,14 @@ add_action( 'wp_enqueue_scripts', 'wp_responsivo_scripts' );
 if ( ! function_exists('tutsup_new_contact_fields') ) {
 
     function tutsup_new_contact_fields( $contact_fields ) {
-        // Twitter
-        $contact_fields['twitter'] = 'Twitter';
+        // LinkedIn
+        $contact_fields['linkedin'] = 'LinkedIn';
         
-        // Facebbok
-        $contact_fields['facebook'] = 'Facebook';
+        // GitHub
+        $contact_fields['github'] = 'GitHub';
         
-        // Google+
-        $contact_fields['googleplus'] = 'Google+';
+        // Lattes
+        $contact_fields['lattes'] = 'Lattes';
 
         return $contact_fields;
     } // tutsup_new_contact_fields
@@ -202,22 +202,22 @@ if ( ! function_exists('tutsup_author_area') ) {
                         <!-- Links sociais -->
                         <p class="tp-social-links clearfix">  
                         
-                        <?php if ( get_the_author_meta( 'facebook', $author_id ) ): ?>
+                        <?php if ( get_the_author_meta( 'linkedin', $author_id ) ): ?>
                             <a class="tp-author-social-link" href="<?php 
-                                echo get_the_author_meta( 'facebook', $author_id ); 
-                            ?>">Facebook</a>  
+                                echo get_the_author_meta( 'linkedin', $author_id ); 
+                            ?>">LinkedIn</a>  
                         <?php endif;?>
                         
-                        <?php if ( get_the_author_meta( 'googleplus', $author_id ) ): ?>
+                        <?php if ( get_the_author_meta( 'github', $author_id ) ): ?>
                             <a class="tp-author-social-link" href="<?php 
-                                echo get_the_author_meta( 'googleplus', $author_id ); 
-                            ?>?rel=author" rel="author">Google+</a> 
+                                echo get_the_author_meta( 'github', $author_id ); 
+                            ?>?rel=author" rel="author">GitHub</a> 
                         <?php endif;?>
                         
-                        <?php if ( get_the_author_meta( 'twitter', $author_id ) ): ?>
+                        <?php if ( get_the_author_meta( 'lattes', $author_id ) ): ?>
                             <a class="tp-author-social-link" href="<?php 
-                                echo get_the_author_meta( 'twitter', $author_id  ); 
-                            ?>">Twitter</a>
+                                echo get_the_author_meta( 'lattes', $author_id  ); 
+                            ?>">Lattes</a>
                         <?php endif;?>
                     
                         </p>

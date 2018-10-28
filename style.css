@@ -799,12 +799,19 @@ a.page-numbers:active {
     margin: 10px 0;
 }
 .tp-author-area .tp-author-social-link{
-    color: #fff;
+    color: white;
     padding: 2px 5px;
-    background: #24890d;
+    background: #F0616E;
+    border-radius: 3px;
+    
 }
 .tp-author-area .tp-author-social-link:hover{
-    color: #fff;
+    color: #F0616E;
+    padding: 1px 4px;
+    text-decoration: none;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid #F0616E;
 }
 
 
