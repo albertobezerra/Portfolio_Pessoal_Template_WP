@@ -38,7 +38,6 @@
 							</div>
 
 						</div>
-
 					
 
 
@@ -102,41 +101,22 @@
 
 					</div>
 
-					<div class="ultimaspublicacoes">Últimas publicações
+					<div class="publicidade">
 
-
-
-					
-
-					</div>
-
-					<div class="publicidade">Publicidade
+						<div class="publicidade-chamada">Publicidade</div>
 						
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-							     style="display:block"
-							     data-ad-format="fluid"
-							     data-ad-layout-key="-73+ed+2i-1n-4w"
-							     data-ad-client="ca-pub-7979689703488774"
-							     data-ad-slot="5425200500"></ins>
-							<script>
-							     (adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-
-						<img src="<?php bloginfo('template_directory'); ?>/assets/images/01.jpg">
-
-
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<!-- Publii Lateral -->
-							<ins class="adsbygoogle"
-							     style="display:block"
-							     data-ad-client="ca-pub-7979689703488774"
-							     data-ad-slot="5146068713"
-							     data-ad-format="auto"
-							     data-full-width-responsive="true"></ins>
-							<script>
-							(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
+						<div class="espaco-publicidade">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<ins class="adsbygoogle"
+								     style="display:block"
+								     data-ad-format="fluid"
+								     data-ad-layout-key="-73+ed+2i-1n-4w"
+								     data-ad-client="ca-pub-7979689703488774"
+								     data-ad-slot="5425200500"></ins>
+								<script>
+								     (adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
 
 					</div>
 

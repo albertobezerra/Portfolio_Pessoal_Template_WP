@@ -627,7 +627,6 @@ Tags: Portfolio, Pessoal, Blog, Posts, Design
 }
 
 
-
 /* PAGINACAO */
 
 .page-numbers {
@@ -672,9 +671,17 @@ a.page-numbers:active {
 }
 
 .publicidade{
-	margin-top: 100px;
-	margin-bottom: 30px;
+	border-top: 1px solid #F0616E;
 	width: 100%;
+}
+
+.publicidade-chamada{
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.espaco-publicidade{
+	margin-top: 10px;
 }
 
 .publicidade>img{

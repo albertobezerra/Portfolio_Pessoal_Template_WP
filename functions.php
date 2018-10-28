@@ -44,6 +44,8 @@ function wp_responsivo_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wp_responsivo_scripts' );
 
+
+
 /*-----------------------------------------------------------------------------*
   Novos campos de contato
 *-----------------------------------------------------------------------------*/
