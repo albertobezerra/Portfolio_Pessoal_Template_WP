@@ -4,15 +4,14 @@
 	<div class="container">
 		<div class="row">
 
-
-			
+				<div class="miolodepao"><?php wp_custom_breadcrumbs(); ?></div>
 				
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 				<div class="col-12 col-md-8">
 
 					<div class="loc-img"><?php the_post_thumbnail(false, array('class'=>"thumb-principal")); ?></div>
-
+					
 					<div class="titulo-do-post"><h3><?php the_title(); ?></h3></div>	
 
 						<?php the_content(); ?>
