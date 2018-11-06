@@ -4,16 +4,6 @@
 
 
 
-      <?php while(have_posts()) : the_post(); ?>
-
-      <?php endwhile; ?>
-
-
-    <?php previous_posts_link(); ?>
-    <?php  next_posts_link(); ?>
-
-
-
 </div>
 
 
